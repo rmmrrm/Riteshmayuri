@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <title>Wedding Invitation | JULY 09 2024 | Shivneri Mangal Karyalay</title>
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, Sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0%;
+            padding-top: 35px;
+            visibility: 90;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .top-right-decoration,
+        .top-left-decoration {
+            position: absolute;
+            top: 0;
+        }
+
+        .top-right-decoration {
+            right: 0;
+        }
+
+        .top-left-decoration {
+            left: 0;
+        }
+
+        .title h1,
+        .title h2,
+        .title h3 {
+            font-family: 'Dancing Script', cursive;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .title h1 {
+            font-size: 60px;
+            color: #674ea7;
+        }
+
+        .title h2 {
+            font-size: 24px;
+            color: #e25c67;
+        }
+
+        .title h3 {
+            font-size: 24px;
+            color: #674ea7;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        .wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .timer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin: 2%;
+            margin-top: 110%;
+        }
+
+        .time-segment {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+            font-size: 1.5rem;
+            min-width: 70px;
+        }
+
+        .days {
+            background: linear-gradient(90deg, #b33a46, #9b313c);
+        }
+
+        .hours {
+            background: linear-gradient(90deg, #a7c3cd, #90a9b2);
+        }
+
+        .minutes {
+            background-color: #874562;
+        }
+
+        .seconds {
+            background-color: #145689;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background: url('mybg.jpg') no-repeat center center fixed;
+                background-size: cover;
+                color: #fff;
+            }
+
+            .time-segment {
+                font-size: 1rem;
+                padding: 10px;
+            }
+
+            .title h1, .title h2, .title h3 {
+                color: #fff;
+            }
+        }
+
+        .map-container {
+            position: relative;
+            width: 100%;
+            max-width: 350px;
+            height: 70px;
+            padding-bottom: 30%;
+            overflow: hidden;
+            border: 3px solid #dd0202;
+            border-radius: 1px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 8px 0;
+        }
+
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .venue {
+            background-color: #674ea7;
+            border-radius: 16px;
+            text-align: center;
+            color: #fff;
+            padding: 8px;
+            margin: 20px 0;
+        }
+
+        .venue a {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!--------------------------------
+    <section id="media"></section>
+    <div class="wrap">
+        <div class="title">
+            <h1>रितेश</h1>
+            <h2>&</h2>
+            <h1>मयुरी</h1>
+            <h3>यांचा शुभविवाह</h3>
+            <h1>मंगळवार. 09 जुलै २०२४</h1>
+            <h3>रोजी</h3>
+            <h2>शिवनेरी मंगल कार्यालय, बोरगाव, महाराष्ट्र येथे संपन्न होत आहे.</h2>
+        </div>
+
+        -->
+    </div>
+    <div class="timer">
+        <div class="time-segment days">
+            <span id="days">00</span>
+            <label>Days</label>
+        </div>
+        <div class="time-segment hours">
+            <span id="hours">00</span>
+            <label>Hours</label>
+        </div>
+        <div class="time-segment minutes">
+            <span id="minutes">00</span>
+            <label>Minutes</label>
+        </div>
+        <div class="time-segment seconds">
+            <span id="seconds">00</span>
+            <label>Seconds</label>
+        </div>
+    </div>
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3815.2754187458595!2d74.7908466108136!3d17.010155313495254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc13744c30a346f%3A0xb5b957dd6ef2ea22!2sShivneri%20Mangal%20Karyalay!5e0!3m2!1sen!2sin!4v1719422492350!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    
+    <script>
+        function updateTimer() {
+            const now = new Date();
+            const target = new Date('July 9, 2024 12:40:00');
+            const diff = target - now;
+
+            if (diff <= 0) {
+                document.getElementById('days').innerText = '00';
+                document.getElementById('hours').innerText = '00';
+                document.getElementById('minutes').innerText = '00';
+                document.getElementById('seconds').innerText = '00';
+                return;
+            }
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById('days').innerText = String(days).padStart(2, '0');
+            document.getElementById('hours').innerText = String(hours).padStart(2, '0');
+            document.getElementById('minutes').innerText = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').innerText = String(seconds).padStart(2, '0');
+        }
+
+        setInterval(updateTimer, 1000);
+    </script>
+</body>
+</html>
